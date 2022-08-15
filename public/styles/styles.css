@@ -3,13 +3,12 @@ body {
     min-height: 100vh;
 }
 
-.container-fluid {
-    padding: 0 1rem;
+h2 {
+    font-weight: bold;
 }
 
-span {
-    font-family: 'Indie Flower', cursive;
-    color: #0d1a22;
+.container-fluid {
+    padding: 0 1rem;
 }
 
 li{
@@ -59,8 +58,13 @@ a:hover {
 
 .brand-name {
     color: #fefefe;
-    font-family: 'Futura', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-size: 2.5rem;
+}
+
+#brand-span {
+    font-family: 'Indie Flower', cursive;
+    color: #0d1a22;
 }
 
 .navbar-toggler {
@@ -156,7 +160,6 @@ a:hover {
 
 .image-section img {
     width: 80%;
-    height: 50%;
     margin: 20px;
     border-radius: 10px;
 }
