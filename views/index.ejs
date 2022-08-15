@@ -4,7 +4,7 @@
     <section class="main-section grid-item-1">
       <div class="grid-container-2">
         <div class="grid-item-1">
-          <h2>Today's Feed</h2>
+          <h2 class="feed-head">Today's Feed</h2>
 
           <p class="date"><%= date %> </p>
           <div class="section-text">
@@ -21,15 +21,6 @@
     </section>
 
     <article class="sign-up grid-item-2">
-      <h2 class="sub-heading">Subscribe To Our Mailing List!</h2>
-      <form action="/" method="post" class="">
-        <label for="fname">Name</label>
-        <input type="text" name="fname" id="fname" class="form-control">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" class="form-control">
-        <button type="submit" class="btn btn-primary btn-lg">I'm in!</button>
-      </form>
-
       <div class="frame-section">
         <h2 class="sub-heading">Check Out Specific Health Tips Just Right For You</h2>
         <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0"
@@ -38,6 +29,15 @@
         <p>Your browser does not support iframes.</p>
       </iframe>
       </div>
+
+      <h2 class="sub-heading">Subscribe To Our Mailing List!</h2>
+      <form action="/" method="post" class="">
+        <label for="fname">Name</label>
+        <input type="text" name="fname" id="fname" class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control">
+        <button type="submit" class="btn btn-primary btn-lg">I'm in!</button>
+      </form>
     </article>
   </div>
 

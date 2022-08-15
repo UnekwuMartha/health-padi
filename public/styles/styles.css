@@ -13,7 +13,7 @@ h2 {
 
 li{
     list-style: none;
-    border-bottom: solid 1px silver;
+    border-bottom: solid 1px rgb(192, 192, 192);
     padding-bottom: 2px;
 }
 
@@ -50,16 +50,15 @@ a:hover {
 .navbar-custom {
     padding: 3.5rem;
     background-color: #8fcdfa;
-    color: #fefefe;
     position: sticky;
     border-radius: 5px;
     box-shadow: 1px 5px 2px 1px #cde1f0;
 }
 
 .brand-name {
-    color: #fefefe;
     font-family: 'Abril Fatface', cursive;
     font-size: 2.5rem;
+    color: #04090c;
 }
 
 #brand-span {
@@ -68,25 +67,21 @@ a:hover {
 }
 
 .navbar-toggler {
-    background-color: #fefefe;
-    color: #0d1a22;
     z-index: 0;
 }
 
 .navbar-toggler-icon {
-    color: #0d1a22;
     z-index: 0;
 }
 
 .nav-item {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    color: #fefefe;
     padding: 0 10px;
 }
 
-.nav-link {
-    color: #fefefe;
+.nav-link-text {
+    color: #f4f5f5;
 }
 
 .icon {
@@ -189,7 +184,7 @@ iframe .button {
     margin: 20px 0;
     background-color: #4aa7e9;
     outline: none;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     font-size: 0.9rem;
 }
@@ -249,6 +244,7 @@ footer {
 @media (max-width: 1028px) {
     body {
         text-align: center;
+        background-color: #f4f5f5;
     }
 
     h1, h2 {
@@ -267,33 +263,68 @@ footer {
         border-radius: 10px;
     }
 
+    .navbar-custom {
+        padding: 2.3rem 1.5rem 4rem 1.5rem;
+        background-color: #8cc1e7;
+        color: #fefefe;
+        position: sticky;
+        border-radius: 5px;
+        box-shadow: 1px 5px 2px 1px #cde1f0;
+    }
+
+    .brand-name {
+        margin: 0;
+    }
+
     .navbar-toggler {
         position: absolute;
+        width: 3.5rem;
         top: 50px;
         right: 30px;
     
-    }
-
-    .nav-link {
-        color: #fefefe;
     }
 
     .nav-ul {
         text-align: start;
     }
 
+    .feed-head {
+        text-align: justify;
+    }
+
     .title-text {
         text-align: justify;
+    }
+
+    .sub-heading {
+        margin: 20px auto;
+    }
+
+    .main-section {
+        padding: 30px 10px;
+        background-color: #f4f5f5;
     }
 
     .section-text {
         text-align: justify;
     }
 
+    .image-section {
+        margin: auto;
+        padding-left: 2.5rem;
+        width: 40%;
+        text-align: center;
+    }
+
     .grid-container-1 {
         display: block;
         
     }
+
+    .grid-container-2 {
+        text-align: justify;
+    }
+
 
     .grid-item-1 {
         display: block;
@@ -334,6 +365,10 @@ footer {
         width: 50%;
         height: 260px;
         margin: auto;
+    }
+
+    footer {
+        background-color: #8cc1e7;
     }
 }
 /* Code Refactoring Coming Up in Git Commit 2. Out of time right now. Suggestions are welcome too. Thank you. */
