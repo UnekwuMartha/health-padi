@@ -1,0 +1,88 @@
+<%- include ("header.ejs") -%>
+<div class="container-fluid">
+  <div class="grid-container-1">
+    <section class="main-section grid-item-1">
+      <div class="grid-container-2">
+        <div class="grid-item-1">
+          <h2>Today's Tip</h2>
+
+          <p class="date"><%= date %> </p>
+          <div class="section-text">
+            <h3 id="title-text"><%= title %></h3>
+            <%-content%>
+            <a href="<%= readMore %>" target="_blank" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="image-section grid-item-2">
+          <img src="<%= image %>" alt="<%= imageAlt %>">
+
+        </div>
+      </div>
+    </section>
+
+    <article class="sign-up grid-item-2">
+      <h2 class="sub-heading">Subscribe To Our Mailing List!</h2>
+      <form action="/" method="post" class="">
+        <label for="fname">Name</label>
+        <input type="text" name="fname" id="fname" class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control">
+        <button type="submit" class="btn btn-primary btn-lg">I'm in!</button>
+      </form>
+
+      <div class="frame-section">
+        <h2 class="sub-heading">Check Out Specific Health Tips Just Right For You</h2>
+        <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0"
+        id="myhealthfinderframe" scrolling="yes" height="250" width="178" marginheight="0" title="myhealthfinder widget"
+        marginwidth="0">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+      </div>
+    </article>
+  </div>
+
+  <hr>
+
+  <article class="facts">
+    <h3>Health Facts!</h3>
+    <div class="card">
+      <div id="carouselControls" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/ff8.jpg" class="d-block w-100" alt="health images">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ff9.jpg" class="d-block w-100" alt="health images">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ff7.png" class="d-block w-100" alt="health images">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ff4.jpg" class="d-block w-100" alt="health images">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ff5.png" class="d-block w-100" alt="health images">
+          </div>
+          <div class="carousel-item">
+            <img src="images/ff.png" class="d-block w-100" alt="health images">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </article>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+</div>
+<%- include ("footer.ejs") -%>
+
+<!-- Code Refactoring Coming Up in Git Commit 2. Out of time right now. Suggestions are welcome too. Thank you. -->
