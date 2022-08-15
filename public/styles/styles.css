@@ -85,6 +85,10 @@ a:hover {
     padding: 0 10px;
 }
 
+.nav-link {
+    color: #fefefe;
+}
+
 .icon {
     color: #fefefe;
     text-decoration: none;
@@ -263,8 +267,23 @@ footer {
         border-radius: 10px;
     }
 
+    .navbar-toggler {
+        position: absolute;
+        top: 50px;
+        right: 30px;
+    
+    }
+
+    .nav-link {
+        color: #fefefe;
+    }
+
     .nav-ul {
         text-align: start;
+    }
+
+    .title-text {
+        text-align: justify;
     }
 
     .section-text {
