@@ -245,7 +245,6 @@ footer {
 @media (max-width: 1028px) {
     body {
         text-align: center;
-        background-image: url("images/bg-ash.jpg");
     }
 
     h1, h2 {
@@ -268,13 +267,15 @@ footer {
         text-align: start;
     }
 
+    .section-text {
+        text-align: justify;
+    }
 
     .grid-container-1 {
         display: block;
         
     }
 
-    
     .grid-item-1 {
         display: block;
     }
