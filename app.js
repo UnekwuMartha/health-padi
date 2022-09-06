@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) => {
     let topicArray = [25, 329, 350, 531, 552, 30530, 30533, 551];
         let topicId = "";
-        setInterval(() => topicId = topicArray[Math.floor(Math.random()*topicArray.length)], 10000);
+        setInterval(() => topicId = topicArray[Math.floor(Math.random()*topicArray.length)], 1000 * 60 * 60 * 24);
 
     if(topicArray.indexOf(topicId) === -1){
         var url = "https://health.gov/myhealthfinder/api/v3/topicsearch.json?TopicId=30530";
